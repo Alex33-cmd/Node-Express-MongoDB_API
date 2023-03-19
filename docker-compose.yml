@@ -14,6 +14,7 @@ services:
       - nodeapp-network
     volumes:
       - ./logs:/var/www/logs
+      - ./:/var/www
     environment:
       - NODE_ENV=production
       - APP_VERSION=1.0
